@@ -1,0 +1,146 @@
+{
+   "partList" : [
+		{
+			"uuid": "da2e564f-f1de-4b38-b2e3-cb43f30d7a4c",
+			"name": "svac",
+			"renderable": {
+				"lodList": [
+					{
+						"subMeshList": [
+							{
+								"textureList": [
+									"$MOD_DATA/Objects/Textures/svac_dif.tga",
+									"$MOD_DATA/Objects/Textures/svac_asg.tga",
+									"$MOD_DATA/Objects/Textures/svac_nor.tga"
+								],
+								"material": "DifAsgNor"
+							},
+							{
+								"textureList": [
+									"$MOD_DATA/Objects/Textures/obj_interactive_controller_05_dif.tga",
+									"$MOD_DATA/Objects/Textures/obj_interactive_controller_05_asg.tga",
+									"$MOD_DATA/Objects/Textures/obj_interactive_controller_05_nor.tga"
+								],
+								"material": "DifAsgNor"
+							},
+							{
+								"textureList": [
+									"$MOD_DATA/Objects/Textures/svac_hide_dif.tga",
+									"$MOD_DATA/Objects/Textures/svac_hide_asg.tga",
+									"$MOD_DATA/Objects/Textures/svac_hide_nor.tga"
+								],
+								"material": "Glass"
+							},
+							{
+								"textureList": [
+									"$MOD_DATA/Objects/Textures/svac_dif.tga",
+									"$MOD_DATA/Objects/Textures/svac_asg.tga",
+									"$MOD_DATA/Objects/Textures/svac_nor.tga"
+								],
+								"material": "DifAsgNor"
+							}
+						],
+						"mesh":  "$MOD_DATA/Objects/Mesh/svac.obj"
+					}
+				]
+			},
+			"color": "df7f01",
+			"scripted": {
+				"filename": "$MOD_DATA/Scripts/svac.lua",
+				"classname": "svac"
+			},
+			"ratings": {
+				"density": 5,
+				"durability": 5,
+				"friction": 2,
+				"buoyancy": 5
+			},
+			"flammable": true,
+			"stackSize": 10,
+			"box":{"x":1, "y":1, "z":1},
+			"physicsMaterial": "Glass",
+			"rotationSet": "PropFull"
+		}
+		,
+		{
+			"uuid": "b42ea95c-1d24-4474-bcc5-c88e1e13c969",
+			"name": "laserbeam",
+			"renderable": {
+				"lodList": [
+					{
+						"subMeshList": [
+						{
+								"textureList": [
+									"$MOD_DATA/Objects/Textures/empty_diff.tga",
+									"$MOD_DATA/Objects/Textures/laserLight_asg.png",
+									"$MOD_DATA/Objects/Textures/empty_nor.tga"
+								],
+								"material": "PoseAnimLightCone"
+							},
+							{
+								"textureList": [
+									"$MOD_DATA/Objects/Textures/empty_diff.tga",
+									"$MOD_DATA/Objects/Textures/svac_glass_asg.tga",
+									"$MOD_DATA/Objects/Textures/empty_nor.tga"
+								],
+								"material": "Glass"
+							},
+							{
+								"textureList": [
+									"$MOD_DATA/Objects/Textures/empty_diff.tga",
+									"$MOD_DATA/Objects/Textures/svac_glass_asg.tga",
+									"$MOD_DATA/Objects/Textures/empty_nor.tga"
+								],
+								"material": "Glass"
+							},
+							{
+								"textureList": [
+									"$MOD_DATA/Objects/Textures/laserBeamPen.png",
+									"$MOD_DATA/Objects/Textures/laserBeamPen_asg.png",
+									"$MOD_DATA/Objects/Textures/empty_nor.tga"
+								],
+								"material": "DifAsgNor"
+							},
+							{
+								"textureList": [
+									"$MOD_DATA/Objects/Textures/empty_diff.tga",
+									"$MOD_DATA/Objects/Textures/svac_glass_asg.tga",
+									"$MOD_DATA/Objects/Textures/empty_nor.tga"
+								],
+								"material": "DifAsgNor"
+							}
+							
+						],
+						"mesh":  "$MOD_DATA/Objects/Mesh/laserBeam.obj",
+						"pose0":  "$MOD_DATA/Objects/Mesh/laserBeam_on.obj"
+					}
+				]
+			},
+			"color": "eeaf5c",
+			"spotlight": {
+				"coneAngle": 1,
+				"coneFade": 0.9,
+				"minRange": 0.0,
+				"maxRange": 19.0,
+				"defaultLuminance": 70,
+				"color" : "eeaf5c",
+				"direction": { "x": 0, "y": 1, "z": 0 }
+			},
+			"ratings": {
+				"density": 5,
+				"durability": 5,
+				"friction": 2,
+				"buoyancy": 5
+			},
+			"flammable": true,
+			"stackSize": 10,
+			"box":{"x":1, "y":1, "z":1},
+			"physicsMaterial": "Glass",
+			"rotationSet": "PropFull"
+		}
+	]
+}
+
+
+
+
